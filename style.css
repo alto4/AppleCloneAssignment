@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*                 Setup                  */
+
+/*               Borderbox                */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+/*               End of Setup             */
+
+/*                  Font                  */
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+/* PAGE STYLES */
+body {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #bbb;
+}
+
+nav .container li {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+}
+
+li a {
+  vertical-align: middle;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-img {
+  float: left;
+  padding: 1rem 0;
+  padding-left: 2rem;
+}
+
+.hero-right {
+  float: left;
+  margin: 220px 50px 0;
+  text-align: center;
+}
+
+.hero-right img {
+  margin-bottom: 0.5em;
+}
+
+.hero-right p {
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.1;
+}
+
+.more-iphone-6 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.more-iphone-6 a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #4ab5e8;
+  text-align: center;
+}
+
+.more-iphone-6 a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Sub-hero Section Styles */
+.sub-hero-section {
+  display: inline-block;
+  width: 100%;
+}
+
+.sub-hero-section .col-3 {
+  width: 25%;
+  height: 200px;
+  display: inline-block;
+}
+
+#sub-img-1 {
+  background: url("./images/watch_large.jpg") center;
+}
+
+#sub-img-2 {
+  background: url("./images/ipad_pro_large.jpg") center;
+}
+
+#sub-img-3 {
+  background: url("./images/accessories_large.jpg") center;
+}
+
+#sub-img-4 {
+  background: url("./images/macbook_large.jpg") center;
+}
+
+.recall-notice {
+  display: block;
+  font-size: 1.2rem;
+  color: #5288cf;
+  text-align: center;
+  margin: 1.2rem auto;
+  text-decoration: none;
+}
+
+.recall-notice:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  background: #f2f2f2;
+}
+
+footer .container {
+  padding: 0.5rem 2rem;
+  font-size: 0.75rem;
+}
+
+footer .link-col {
+  width: 20%;
+  display: inline-block;
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.link-col li a {
+  text-decoration: none;
+  color: #666;
+}
+
+.link-col li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #222;
+}
+
+.link-col .list-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+footer p,
+.footer-bottom {
+  color: #999;
+}
+
+footer p {
+  padding: 0.5rem 0;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+footer p a {
+  color: #08c;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 0.5rem 0 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-bottom-left ul {
+  display: inline-block;
+}
+
+.footer-bottom-left li a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 0.75rem;
+  margin: 0.2rem;
+  border-left: 1px solid #d6d6d6;
+  color: #666;
+}
+
+.footer-bottom-left li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-right {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.footer-bottom-right span {
+  padding-bottom: 10px;
+}
+
+.footer-bottom-links li {
+  display: inline-block;
+}
